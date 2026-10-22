@@ -1,0 +1,675 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Aatika Kulsum | Portfolio</title>
+
+<!-- ============================================================
+     SEO + SHARING  (TODO: set your real site URL and a preview image)
+     ============================================================ -->
+<meta name="description" content="Shaik Aatika Kulsum, Information Science engineering student in Bangalore. IoT and computer-vision projects, internship experience and certifications.">
+<meta name="author" content="Shaik Aatika Kulsum">
+<meta name="theme-color" content="#0B6B50">
+<link rel="canonical" href="https://your-site-url.com/">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Aatika Kulsum | Portfolio">
+<meta property="og:description" content="IoT and computer-vision projects by an Information Science engineering student.">
+<meta property="og:url" content="https://your-site-url.com/">
+<meta property="og:image" content="https://your-site-url.com/preview.png">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='12' fill='%230B6B50'/%3E%3Ctext x='32' y='42' font-family='Arial' font-weight='800' font-size='28' text-anchor='middle' fill='white'%3EAK%3C/text%3E%3C/svg%3E">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Person",
+  "name": "Shaik Aatika Kulsum",
+  "jobTitle": "Engineering student",
+  "affiliation": { "@type": "CollegeOrUniversity", "name": "Ghousia Institute of Technology for Women" },
+  "address": { "@type": "PostalAddress", "addressLocality": "Bangalore", "addressCountry": "IN" },
+  "url": "https://your-site-url.com/",
+  "sameAs": ["https://github.com/Aatika18-hub
+", "https://www.linkedin.com/in/shaik-aatika"]
+}
+</script>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,700;12..96,800&family=IBM+Plex+Mono:wght@400;500&family=IBM+Plex+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+
+<style>
+  /* Layout: stacked datasheet-style sections. Hero with a spec plate, About, Skills,
+     Projects (filterable), Experience, Education, Credentials, Achievements, Contact form. */
+  :root {
+    --bg: #F2F5F3;
+    --surface: #FFFFFF;
+    --ink: #0F1D1A;
+    --muted: #55645F;
+    --line: #D3DCD7;
+    --accent: #0B6B50;
+    --accent-ink: #FFFFFF;
+    --mark: #DDF56B;
+    --mark-ink: #1A2300;
+
+    --font-display: "Bricolage Grotesque", "Helvetica Neue", Arial, sans-serif;
+    --font-body: "IBM Plex Sans", system-ui, -apple-system, "Segoe UI", sans-serif;
+    --font-mono: "IBM Plex Mono", ui-monospace, "SFMono-Regular", Menlo, Consolas, monospace;
+
+    --step--1: 0.8125rem;
+    --step-0: 1rem;
+    --step-1: 1.25rem;
+    --step-2: 1.75rem;
+    --step-3: clamp(2.1rem, 1.4rem + 3.2vw, 3.6rem);
+    color-scheme: light;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root:not([data-theme="light"]) {
+      --bg: #0A1311; --surface: #111D1A; --ink: #E7F0EC; --muted: #9BAEA7;
+      --line: #23332E; --accent: #5ED6AB; --accent-ink: #05150F;
+      color-scheme: dark;
+    }
+  }
+  :root[data-theme="dark"] {
+    --bg: #0A1311; --surface: #111D1A; --ink: #E7F0EC; --muted: #9BAEA7;
+    --line: #23332E; --accent: #5ED6AB; --accent-ink: #05150F;
+    color-scheme: dark;
+  }
+
+  *, *::before, *::after { box-sizing: border-box; }
+  html { scroll-behavior: smooth; scroll-padding-top: 110px; }
+  body {
+    margin: 0; background: var(--bg); color: var(--ink);
+    font-family: var(--font-body); font-size: var(--step-0); line-height: 1.6;
+    -webkit-font-smoothing: antialiased;
+  }
+  a { color: inherit; }
+  :focus-visible { outline: 2px solid var(--accent); outline-offset: 3px; border-radius: 2px; }
+  .skip { position: absolute; left: -999px; top: 8px; background: var(--accent); color: var(--accent-ink); padding: 8px 12px; border-radius: 6px; z-index: 50; }
+  .skip:focus { left: 8px; }
+
+  .wrap {
+    max-width: 1080px; margin-inline: auto;
+    padding-left: max(16px, env(safe-area-inset-left, 0px));
+    padding-right: max(16px, env(safe-area-inset-right, 0px));
+  }
+  section { padding-block: 56px; }
+  main > section + section { border-top: 1px solid var(--line); }
+
+  .eyebrow { font-family: var(--font-mono); font-size: var(--step--1); letter-spacing: 0.12em; text-transform: uppercase; color: var(--accent); margin: 0 0 12px; }
+  h1, h2, h3 { font-family: var(--font-display); line-height: 1.08; margin: 0; text-wrap: balance; }
+  h2 { font-size: var(--step-2); font-weight: 700; letter-spacing: -0.01em; }
+  h3 { font-size: var(--step-1); font-weight: 700; }
+  p { margin: 0; }
+  .lede { color: var(--muted); max-width: 62ch; }
+  .section-head { display: flex; flex-direction: column; gap: 6px; margin-bottom: 32px; }
+  .label { font-family: var(--font-mono); font-size: 0.72rem; letter-spacing: 0.1em; text-transform: uppercase; color: var(--muted); margin: 0 0 10px; }
+  .kicker { font-family: var(--font-mono); font-size: var(--step--1); color: var(--muted); }
+
+  /* ---------- header ---------- */
+  .top { position: sticky; top: 0; z-index: 20; background: var(--bg); border-bottom: 1px solid var(--line); }
+  .top .bar { display: flex; align-items: center; justify-content: space-between; gap: 16px; padding-block: 10px; }
+  .brand { font-family: var(--font-display); font-weight: 800; text-decoration: none; letter-spacing: -0.01em; white-space: nowrap; }
+  .toggle {
+    font: inherit; font-family: var(--font-mono); font-size: var(--step--1);
+    background: transparent; color: var(--ink); border: 1px solid var(--line);
+    border-radius: 6px; padding: 6px 10px; cursor: pointer;
+  }
+  .toggle:hover { border-color: var(--accent); }
+  .nav { display: flex; gap: 2px; overflow-x: auto; scrollbar-width: none; padding-bottom: 8px; margin-inline: -8px; }
+  .nav::-webkit-scrollbar { display: none; }
+  .nav a { flex: none; font-size: 0.88rem; text-decoration: none; color: var(--muted); padding: 5px 10px; border-radius: 6px; white-space: nowrap; }
+  .nav a:hover { color: var(--ink); background: var(--surface); }
+  .nav a[aria-current="true"] { color: var(--accent); background: var(--surface); box-shadow: inset 0 -2px 0 var(--accent); }
+
+  /* ---------- hero ---------- */
+  .hero { padding-block: 64px 56px; }
+  .hero-grid { display: grid; grid-template-columns: minmax(0, 1.25fr) minmax(0, 1fr); gap: 40px; align-items: start; }
+  .hero h1 { font-size: var(--step-3); font-weight: 800; letter-spacing: -0.025em; }
+  .hero h1 mark { background: linear-gradient(transparent 58%, var(--mark) 58% 92%, transparent 92%); color: inherit; padding-inline: 2px; }
+  .hero .lede { margin-top: 20px; font-size: 1.125rem; color: var(--ink); opacity: 0.86; }
+  .cta { display: flex; flex-wrap: wrap; gap: 12px; margin-top: 28px; }
+  .btn { display: inline-block; text-decoration: none; font-weight: 600; font-size: 0.95rem; padding: 11px 18px; border-radius: 6px; border: 1px solid var(--accent); cursor: pointer; font-family: inherit; }
+  .btn.primary { background: var(--accent); color: var(--accent-ink); }
+  .btn.primary:hover { filter: brightness(1.08); }
+  .btn.ghost { color: var(--accent); background: transparent; }
+  .btn.ghost:hover { background: var(--surface); }
+  .btn.small { padding: 7px 12px; font-size: 0.85rem; }
+  .socials { display: flex; flex-wrap: wrap; gap: 8px 18px; margin-top: 24px; font-family: var(--font-mono); font-size: 0.8rem; }
+  .socials a { color: var(--muted); text-decoration: none; border-bottom: 1px solid var(--line); }
+  .socials a:hover { color: var(--accent); border-color: var(--accent); }
+
+  .plate { background: var(--surface); border: 1px solid var(--ink); border-radius: 4px; font-family: var(--font-mono); font-size: 0.8125rem; min-width: 0; }
+  .plate-head { display: flex; justify-content: space-between; gap: 12px; flex-wrap: wrap; padding: 8px 14px; border-bottom: 1px solid var(--ink); background: var(--ink); color: var(--bg); letter-spacing: 0.08em; text-transform: uppercase; font-size: 0.72rem; }
+  .plate dl { margin: 0; display: grid; grid-template-columns: auto minmax(0, 1fr); }
+  .plate dt, .plate dd { padding: 9px 14px; border-bottom: 1px dashed var(--line); margin: 0; }
+  .plate dt { color: var(--muted); text-transform: uppercase; letter-spacing: 0.08em; font-size: 0.72rem; padding-right: 8px; }
+  .plate dd { overflow-wrap: anywhere; }
+  .plate dl > :nth-last-child(-n+2) { border-bottom: 0; }
+  .status { display: inline-flex; align-items: center; gap: 8px; }
+  .dot { width: 8px; height: 8px; border-radius: 50%; background: var(--accent); flex: none; animation: pulse 2.4s ease-in-out infinite; }
+  @keyframes pulse { 50% { opacity: 0.35; } }
+  @media (prefers-reduced-motion: reduce) { .dot { animation: none; } html { scroll-behavior: auto; } }
+  @media (max-width: 800px) { .hero-grid { grid-template-columns: minmax(0, 1fr); gap: 32px; } }
+
+  /* ---------- about ---------- */
+  .about { display: grid; grid-template-columns: minmax(0, 1.4fr) minmax(0, 1fr); gap: 40px; }
+  .about p + p { margin-top: 14px; }
+  .facts { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 12px; align-content: start; }
+  .fact { background: var(--surface); border: 1px solid var(--line); border-radius: 6px; padding: 16px; }
+  .fact b { display: block; font-family: var(--font-display); font-size: 1.6rem; line-height: 1; font-variant-numeric: tabular-nums; }
+  .fact span { font-family: var(--font-mono); font-size: 0.72rem; color: var(--muted); letter-spacing: 0.06em; text-transform: uppercase; }
+  @media (max-width: 800px) { .about { grid-template-columns: minmax(0, 1fr); gap: 28px; } }
+
+  /* ---------- skills ---------- */
+  .skills { display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 240px), 1fr)); gap: 16px; }
+  .skill-group { background: var(--surface); border: 1px solid var(--line); border-radius: 6px; padding: 20px; min-width: 0; }
+  .chips { display: flex; flex-wrap: wrap; gap: 6px; padding: 0; margin: 0; list-style: none; }
+  .chips li { font-family: var(--font-mono); font-size: 0.78rem; border: 1px solid var(--line); border-radius: 4px; padding: 4px 9px; }
+
+  /* ---------- projects ---------- */
+  .filters { display: flex; flex-wrap: wrap; gap: 8px; margin-bottom: 20px; }
+  .filters button {
+    font: inherit; font-family: var(--font-mono); font-size: 0.78rem; cursor: pointer;
+    background: transparent; color: var(--muted); border: 1px solid var(--line); border-radius: 999px; padding: 5px 14px;
+  }
+  .filters button:hover { border-color: var(--accent); color: var(--ink); }
+  .filters button[aria-pressed="true"] { background: var(--accent); border-color: var(--accent); color: var(--accent-ink); }
+  [hidden] { display: none !important; }
+
+  .feature { background: var(--surface); border: 1px solid var(--line); border-radius: 6px; display: grid; grid-template-columns: minmax(0, 1.1fr) minmax(0, 1fr); }
+  .feature > div { padding: 28px; min-width: 0; }
+  .feature > div + div { border-left: 1px solid var(--line); }
+  .feature h3 { font-size: var(--step-2); margin-bottom: 4px; }
+  .feature .kicker { margin-bottom: 14px; }
+  .feature p + p { margin-top: 12px; }
+  .tags { display: flex; flex-wrap: wrap; gap: 6px; margin: 18px 0 0; padding: 0; list-style: none; }
+  .tags li { font-family: var(--font-mono); font-size: 0.75rem; border: 1px solid var(--line); border-radius: 4px; padding: 3px 8px; color: var(--muted); }
+  .proj-links { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 18px; }
+  .flow { list-style: none; counter-reset: s; margin: 0 0 26px; padding: 0; }
+  .flow li { counter-increment: s; position: relative; padding: 8px 0 8px 40px; border-left: 1px solid var(--line); margin-left: 12px; font-size: 0.94rem; }
+  .flow li::before { content: counter(s); position: absolute; left: -13px; top: 8px; width: 25px; height: 25px; border-radius: 50%; background: var(--bg); border: 1px solid var(--accent); color: var(--accent); font-family: var(--font-mono); font-size: 0.75rem; display: grid; place-items: center; }
+  .flow b { font-weight: 600; }
+  .bom { width: 100%; border-collapse: collapse; font-family: var(--font-mono); font-size: 0.78rem; }
+  .bom td { padding: 6px 0; border-bottom: 1px dashed var(--line); vertical-align: top; }
+  .bom td:first-child { color: var(--muted); width: 38%; padding-right: 10px; }
+  @media (max-width: 800px) {
+    .feature { grid-template-columns: minmax(0, 1fr); }
+    .feature > div + div { border-left: 0; border-top: 1px solid var(--line); }
+    .feature > div { padding: 22px 18px; }
+  }
+  .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 290px), 1fr)); gap: 16px; margin-top: 16px; }
+  .card { background: var(--surface); border: 1px solid var(--line); border-radius: 6px; padding: 22px; display: flex; flex-direction: column; gap: 10px; min-width: 0; }
+  .card p { color: var(--muted); font-size: 0.95rem; }
+  .card .tags { margin-top: auto; padding-top: 8px; }
+  .card .proj-links { margin-top: 6px; }
+
+  /* ---------- timeline (experience + education) ---------- */
+  .two { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 40px; }
+  @media (max-width: 800px) { .two { grid-template-columns: minmax(0, 1fr); gap: 48px; } }
+  .entry { padding: 18px 0; border-bottom: 1px solid var(--line); }
+  .entry:first-of-type { padding-top: 0; }
+  .entry:last-child { border-bottom: 0; }
+  .entry .when { font-family: var(--font-mono); font-size: var(--step--1); color: var(--accent); }
+  .entry h3 { margin: 4px 0; font-size: 1.15rem; }
+  .entry p { color: var(--muted); font-size: 0.95rem; }
+  .entry ul { margin: 8px 0 0; padding-left: 18px; color: var(--muted); font-size: 0.95rem; }
+  .entry li + li { margin-top: 4px; }
+
+  /* ---------- credentials ---------- */
+  .certs { display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 240px), 1fr)); gap: 16px; padding: 0; margin: 0; list-style: none; }
+  .certs li { background: var(--surface); border: 1px solid var(--line); border-radius: 6px; padding: 18px; }
+  .certs b { display: block; font-family: var(--font-display); font-size: 1.05rem; line-height: 1.2; margin-bottom: 4px; }
+  .certs span { font-family: var(--font-mono); font-size: 0.75rem; color: var(--muted); }
+
+  /* ---------- contact ---------- */
+  .contact { background: var(--ink); color: var(--bg); border-top: 0 !important; }
+  .contact .eyebrow { color: var(--mark); }
+  .contact-grid { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); gap: 48px; }
+  @media (max-width: 800px) { .contact-grid { grid-template-columns: minmax(0, 1fr); gap: 36px; } }
+  .contact h2 { font-size: clamp(1.9rem, 1.2rem + 3vw, 3rem); max-width: 16ch; }
+  .contact .lede { color: inherit; opacity: 0.8; margin-top: 14px; }
+  .links { list-style: none; margin: 28px 0 0; padding: 0; }
+  .links li { display: grid; grid-template-columns: 90px minmax(0, 1fr); gap: 12px; padding: 12px 0; border-top: 1px solid rgba(127,127,127,0.35); }
+  .links li:last-child { border-bottom: 1px solid rgba(127,127,127,0.35); }
+  .links span { font-family: var(--font-mono); font-size: 0.75rem; letter-spacing: 0.1em; text-transform: uppercase; opacity: 0.65; padding-top: 3px; }
+  .links a { text-decoration: none; overflow-wrap: anywhere; border-bottom: 1px solid var(--mark); justify-self: start; }
+  .links a:hover { background: var(--mark); color: var(--mark-ink); }
+  form { display: grid; gap: 14px; align-content: start; }
+  label { font-family: var(--font-mono); font-size: 0.72rem; letter-spacing: 0.1em; text-transform: uppercase; opacity: 0.75; display: block; margin-bottom: 6px; }
+  input, textarea {
+    width: 100%; font: inherit; color: inherit; background: transparent;
+    border: 1px solid rgba(127,127,127,0.55); border-radius: 6px; padding: 11px 12px;
+  }
+  input:focus-visible, textarea:focus-visible { outline: 2px solid var(--mark); outline-offset: 2px; }
+  textarea { min-height: 130px; resize: vertical; }
+  .contact .btn.primary { background: var(--mark); color: var(--mark-ink); border-color: var(--mark); justify-self: start; }
+  .form-note { font-size: 0.85rem; opacity: 0.75; min-height: 1.3em; }
+
+  footer { background: var(--ink); color: var(--bg); padding-block: 0 28px; font-family: var(--font-mono); font-size: 0.75rem; }
+  footer .wrap { display: flex; justify-content: space-between; flex-wrap: wrap; gap: 10px; opacity: 0.65; }
+  footer a { text-decoration: none; border-bottom: 1px solid currentColor; }
+
+  /* back to top */
+  .up {
+    position: fixed; right: max(16px, env(safe-area-inset-right, 0px)); bottom: max(16px, env(safe-area-inset-bottom, 0px));
+    width: 40px; height: 40px; border-radius: 50%; border: 1px solid var(--line);
+    background: var(--surface); color: var(--ink); cursor: pointer; font-size: 1.1rem; display: none;
+  }
+  .up.show { display: block; }
+
+  @media print {
+    .top, .up, .filters, form, .toggle { display: none !important; }
+    body { background: #fff; color: #000; }
+    .contact, footer { background: #fff; color: #000; }
+  }
+</style>
+</head>
+<body>
+<a class="skip" href="#about">Skip to content</a>
+
+<header class="top">
+  <div class="wrap">
+    <div class="bar">
+      <a class="brand" href="#top">Aatika Kulsum</a>
+      <button class="toggle" id="theme" type="button" aria-label="Switch colour theme">Theme</button>
+    </div>
+    <nav class="nav" id="nav" aria-label="Sections">
+      <a href="#about">About</a>
+      <a href="#skills">Skills</a>
+      <a href="#projects">Projects</a>
+      <a href="#experience">Experience</a>
+      <a href="#education">Education</a>
+      <a href="#credentials">Certifications</a>
+      <a href="#achievements">Achievements</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </div>
+</header>
+
+<main id="top">
+
+  <!-- ============================ HERO ============================ -->
+  <section class="hero">
+    <div class="wrap hero-grid">
+      <div>
+        <p class="eyebrow">Information Science &amp; Engineering</p>
+        <h1>Shaik Aatika Kulsum builds <mark>things that sense and decide.</mark></h1>
+        <p class="lede">I work on IoT and computer-vision projects, from the sensor on the board to the model that reads its data. My main project is SmartBinX, a smart bin that classifies waste.</p>
+        <div class="cta">
+          <a class="btn primary" href="#projects">See my projects</a>
+          <!-- TODO: put your resume PDF next to this file and name it resume.pdf -->
+          <a class="btn ghost" href="Shaik_Aatika_Kulsum_Resume.pdf" download>Download resume</a>
+          <a class="btn ghost" href="#contact">Get in touch</a>
+        </div>
+        <!-- TODO: replace your-username in both links -->
+        <div class="socials">
+          <a href="https://github.com/Aatika18-hub" target="_blank" rel="noopener">GitHub</a>
+          <a href="https://www.linkedin.com/in/shaik-aatika" target="_blank" rel="noopener">LinkedIn</a>
+          <a href="mailto:you@example.com">shaikaatika61@gmail.com</a>
+        </div>
+      </div>
+
+      <aside class="plate" aria-label="Profile summary">
+        <div class="plate-head"><span>Profile</span><span>Rev. 2026-10</span></div>
+        <dl>
+          <dt>Name</dt><dd>Shaik Aatika Kulsum</dd>
+          <dt>Degree</dt><dd>B.E. Information Science &amp; Engineering</dd>
+          <dt>College</dt><dd>Ghousia Institute of Technology for Women</dd>
+          <dt>University</dt><dd>Visvesvaraya Technological University</dd>
+          <dt>Batch</dt><dd>2023 &ndash; 2027</dd>
+          <dt>Base</dt><dd>Bangalore, India</dd>
+          <dt>Status</dt><dd><span class="status"><span class="dot" aria-hidden="true"></span>Open to internships &amp; entry-level roles</span></dd>
+        </dl>
+      </aside>
+    </div>
+  </section>
+
+  <!-- ============================ ABOUT ============================ -->
+  <section id="about">
+    <div class="wrap">
+      <div class="section-head">
+        <p class="eyebrow">About</p>
+        <h2>A short introduction</h2>
+      </div>
+      <div class="about">
+        <div>
+          <p>I am a final-year Information Science and Engineering student at Ghousia Institute of Technology for Women, Bangalore, affiliated with VTU. I like projects where hardware, data and software meet, and where the result is something people can use.</p>
+          <p>My major project, SmartBinX, is a smart bin that classifies waste using sensors, a camera and a TensorFlow Lite model. I have also built CookScan, an ingredient detector using YOLOv8, and I co-authored a paper on a multi-purpose mobile robot for a national conference.</p>
+          <!-- TODO: add one sentence on what you want next, e.g. the kind of role or team you are looking for -->
+        </div>
+        <div class="facts">
+          <div class="fact"><b>2027</b><span>Graduating</span></div>
+          <div class="fact"><b>4</b><span>Certifications</span></div>
+          <div class="fact"><b>1</b><span>Conference paper</span></div>
+          <div class="fact"><b>1</b><span>AI internship</span></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================ SKILLS ============================ -->
+  <section id="skills">
+    <div class="wrap">
+      <div class="section-head">
+        <p class="eyebrow">Skills</p>
+        <h2>Tools I use</h2>
+      </div>
+      <!-- TODO: add programming languages you are comfortable with (for example Python, C, Java) and any web skills -->
+      <div class="skills">
+        <div class="skill-group">
+          <p class="label">Hardware &amp; IoT</p>
+          <ul class="chips"><li>Arduino Uno</li><li>ESP32-CAM</li><li>HC-SR04</li><li>IR sensors</li><li>Servo motors</li></ul>
+        </div>
+        <div class="skill-group">
+          <p class="label">ML &amp; vision</p>
+          <ul class="chips"><li>TensorFlow Lite</li><li>YOLOv8</li><li>OpenCV</li></ul>
+        </div>
+        <div class="skill-group">
+          <p class="label">Backend &amp; data</p>
+          <ul class="chips"><li>Flask</li><li>SQLite</li><li>SQL</li></ul>
+        </div>
+        <div class="skill-group">
+          <p class="label">Foundations</p>
+          <ul class="chips"><li>Data structures</li><li>Algorithms</li></ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================ PROJECTS ============================ -->
+  <section id="projects">
+    <div class="wrap">
+      <div class="section-head">
+        <p class="eyebrow">Projects</p>
+        <h2>What I have built</h2>
+      </div>
+
+      <div class="filters" role="group" aria-label="Filter projects">
+        <button type="button" data-filter="all" aria-pressed="true">All</button>
+        <button type="button" data-filter="iot" aria-pressed="false">IoT</button>
+        <button type="button" data-filter="ai" aria-pressed="false">AI / ML</button>
+        <button type="button" data-filter="web" aria-pressed="false">Web</button>
+        <button type="button" data-filter="research" aria-pressed="false">Research</button>
+      </div>
+
+      <article class="feature" data-tags="iot ai">
+        <div>
+          <p class="kicker">Major project &middot; Team of three</p>
+          <h3>SmartBinX</h3>
+          <p class="kicker">IoT + AI waste classification</p>
+          <p>A smart bin that identifies the type of waste put into it and sorts it automatically. It pairs low-cost sensors and a camera with an on-device machine-learning model, so classification does not depend on a server.</p>
+          <p>I also explored how this could be deployed in India, including government-ready enhancements aligned with Swachh Bharat and the Smart Cities Mission. Documentation covers the SRS, project report, synopsis and presentation.</p>
+          <ul class="tags"><li>TensorFlow Lite</li><li>ESP32-CAM</li><li>Arduino Uno</li><li>IoT</li><li>Computer vision</li></ul>
+          <!-- TODO: add real links. Delete a button if you do not have that link. -->
+          <div class="proj-links">
+            <a class="btn primary small" href="https://github.com/Aatika18-hub/SmartbinX" target="_blank" rel="noopener">Code</a>
+            <a class="btn ghost small" href="#" target="_blank" rel="noopener">https://smartbinx-dx5q.onrender.com</a>
+          </div>
+        </div>
+        <div>
+          <p class="label">How it works</p>
+          <ol class="flow"
+            <li><b>IR sensor</b> detects that an item has been dropped in.</li>
+            <li><b>ESP32-CAM</b> captures an image of the item.</li>
+            <li><b>TensorFlow Lite</b> model classifies the waste type.</li>
+            <li><b>Servo motors</b> route the item to the right compartment.</li>
+            <li><b>HC-SR04</b> ultrasonic sensor tracks how full the bin is.</li>
+          </ol>
+          <p class="label">Hardware</p>
+          <table class="bom">
+            <tr><td>Controller</td><td>Arduino Uno</td></tr>
+            <tr><td>Vision</td><td>ESP32-CAM</td></tr>
+            <tr><td>Sensing</td><td>IR sensor, HC-SR04</td></tr>
+            <tr><td>Actuation</td><td>Servo motors</td></tr>
+            <tr><td>Model</td><td>TensorFlow Lite</td></tr>
+          </table>
+          <!-- TODO: add results here, for example model accuracy and number of waste classes -->
+        </div>
+      </article>
+
+      <div class="grid">
+        <article class="card" data-tags="ai">
+          <p class="kicker">Computer vision app</p>
+          <h3>CookScan</h3>
+          <p>Detects food ingredients from an image using YOLOv8.</p>
+          <ul class="tags"><li>YOLOv8</li><li>Object detection</li></ul>
+          <div class="proj-links"><a class="btn ghost small" href="https://github.com/Aatika18-hub/cookscan" target="_blank" rel="noopener">Code</a></div>
+        </article>
+
+        <article class="card" data-tags="research iot">
+          <p class="kicker">Publication &middot; National conference</p>
+          <h3>Multi-purpose mobile robot</h3>
+          <p>Authored a paper on a multi-purpose mobile robot, presented at a national conference.</p>
+          <ul class="tags"><li>Robotics</li><li>Research paper</li></ul>
+          <!-- TODO: add the conference name, year and a link to the paper -->
+        </article>
+
+        <!-- TODO: write one line for each of these three and add links -->
+        <article class="card" data-tags="web">
+          <p class="kicker">Web project</p>
+          <h3>Emotive World</h3>
+          <p>Built an emotion-responsive gaming platform that detects facial expressions and adapts gameplay across five mini-games.</p>
+          <div class="proj-links"><a class="btn ghost small" href="https://github.com/Aatika18-hub/emotiveworld" target="_blank" rel="noopener">Code</a></div>
+        </article>
+
+        <article class="card" data-tags="web">
+          <p class="kicker">Web project</p>
+          <h3>Chic Style</h3>
+          <p>Developed a fashion-focused web application for exploring trendy outfits and styling ideas.</p>
+          <div class="proj-links"><a class="btn ghost small" href="https://github.com/Aatika18-hub/chic-steals" target="_blank" rel="noopener">Code</a></div>
+        </article>
+
+        <article class="card" data-tags="web">
+          <p class="kicker">Web project</p>
+          <h3>Campus Connect Hub</h3>
+          <p>Developed a campus management platform to track student attendance, marks, CGPA, and timetables using a relational database.</p>
+          <div class="proj-links"><a class="btn ghost small" href="https://github.com/Aatika18-hub/intraquest-campus" target="_blank" rel="noopener">Code</a></div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================ EXPERIENCE + EDUCATION ============================ -->
+  <section id="experience">
+    <div class="wrap two">
+      <div>
+        <p class="eyebrow">Experience</p>
+        <h2 style="margin-bottom:24px">Where I have worked</h2>
+        <div class="entry">
+          <span class="when">Sep 10 &ndash; Oct 10, 2026</span>
+          <h3>Artificial Intelligence Intern</h3>
+          <p>CodeAlpha, Lucknow &middot; Virtual internship</p>
+          <!-- TODO: replace with what you actually did and delivered -->
+          <ul>
+            <li>Add a task you completed and the result.</li>
+            <li>Add the tools or models you used.</li>
+          </ul>
+        </div>
+        <!-- Copy the block above for each additional internship or role -->
+      </div>
+
+      <div id="education">
+        <p class="eyebrow">Education</p>
+        <h2 style="margin-bottom:24px">Where I study</h2>
+        <div class="entry">
+          <span class="when">2023 &ndash; 2027</span>
+          <h3>B.E. Information Science &amp; Engineering</h3>
+          <p>Ghousia Institute of Technology for Women, Bangalore<br>Visvesvaraya Technological University (VTU)</p>
+          <!-- TODO: add your CGPA or percentage and 2-4 relevant courses -->
+        </div>
+        <!-- TODO: add pre-university and school entries in the same format:
+        <div class="entry">
+          <span class="when">Year &ndash; Year</span>
+          <h3>Pre-University (PUC)</h3>
+          <p>College name, board &middot; Score</p>
+        </div>
+        -->
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================ CERTIFICATIONS ============================ -->
+  <section id="credentials">
+    <div class="wrap">
+      <div class="section-head">
+        <p class="eyebrow">Certifications</p>
+        <h2>Courses and programs</h2>
+      </div>
+      <!-- TODO: add a credential link or year inside each span if you have one -->
+      <ul class="certs">
+        <li><b>AI / ML</b><span>C-DAC</span></li>
+        <li><b>Data Structures &amp; Algorithms</b><span>Udemy</span></li>
+        <li><b>SQL</b><span>Simplilearn</span></li>
+        <li><b>Goldman Sachs virtual program</b><span>Forage</span></li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- ============================ ACHIEVEMENTS ============================ -->
+  <section id="achievements">
+    <div class="wrap">
+      <div class="section-head">
+        <p class="eyebrow">Achievements</p>
+        <h2>Publications and recognition</h2>
+      </div>
+      <div class="entry" style="padding-top:0">
+        <span class="when">National conference</span>
+        <h3>Paper on a multi-purpose mobile robot</h3>
+        <p>Authored and presented a research paper at a national conference.</p>
+      </div>
+      <!-- TODO: add hackathons, competitions, college awards, club roles or leadership in the same format:
+      <div class="entry">
+        <span class="when">Year</span>
+        <h3>Title of the achievement</h3>
+        <p>What you did, and the result.</p>
+      </div>
+      -->
+    </div>
+  </section>
+
+  <!-- ============================ CONTACT ============================ -->
+  <section class="contact" id="contact">
+    <div class="wrap contact-grid">
+      <div>
+        <p class="eyebrow">Contact</p>
+        <h2>Hiring for an AI, IoT or software role?</h2>
+        <p class="lede">I am a final-year student looking for internships and entry-level roles. Send a message and I will reply.</p>
+        <!-- TODO: replace the three placeholders with your real details -->
+        <ul class="links">
+          <li><span>Email</span><a href="shaikaatika61@gmail.com">you@example.com</a></li>
+          <li><span>GitHub</span><a href="https://github.com/Aatika18-hub" target="_blank" rel="noopener">github.com/your-username</a></li>
+          <li><span>LinkedIn</span><a href="https://www.linkedin.com/in/shaik-aatika/" target="_blank" rel="noopener">linkedin.com/in/your-username</a></li>
+          <li><span>Location</span><span style="opacity:1;letter-spacing:0;text-transform:none;font-family:var(--font-body);font-size:1rem;padding-top:0">Bangalore, India</span></li>
+        </ul>
+      </div>
+
+      <!-- TODO: make the form work. Create a free form at formspree.io, then paste your
+           form URL into action. Until then the button opens your email app instead. -->
+      <form id="contact-form" action="https://formspree.io/f/YOUR_FORM_ID" method="POST">
+        <div><label for="name">Name</label><input id="name" name="name" type="text" autocomplete="name" required></div>
+        <div><label for="email">Email</label><input id="email" name="email" type="email" autocomplete="email" required></div>
+        <div><label for="message">Message</label><textarea id="message" name="message" required></textarea></div>
+        <button class="btn primary" type="submit">Send message</button>
+        <p class="form-note" id="form-note" role="status"></p>
+      </form>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <span>&copy; <span id="yr">2026</span> Shaik Aatika Kulsum &middot; Bangalore</span>
+    <a href="#top">Back to top</a>
+  </div>
+</footer>
+
+<button class="up" id="up" type="button" aria-label="Back to top">&uarr;</button>
+
+<script>
+(function () {
+  var root = document.documentElement;
+
+  /* theme toggle, remembered between visits */
+  try {
+    var saved = localStorage.getItem("theme");
+    if (saved === "light" || saved === "dark") root.setAttribute("data-theme", saved);
+  } catch (e) {}
+  function isDark() {
+    var t = root.getAttribute("data-theme");
+    if (t) return t === "dark";
+    return window.matchMedia && window.matchMedia("(prefers-color-scheme: dark)").matches;
+  }
+  document.getElementById("theme").addEventListener("click", function () {
+    var next = isDark() ? "light" : "dark";
+    root.setAttribute("data-theme", next);
+    try { localStorage.setItem("theme", next); } catch (e) {}
+  });
+
+  /* project filter */
+  var buttons = document.querySelectorAll(".filters button");
+  var items = document.querySelectorAll("#projects [data-tags]");
+  buttons.forEach(function (b) {
+    b.addEventListener("click", function () {
+      var f = b.getAttribute("data-filter");
+      buttons.forEach(function (x) { x.setAttribute("aria-pressed", String(x === b)); });
+      items.forEach(function (el) {
+        var tags = el.getAttribute("data-tags").split(" ");
+        el.hidden = !(f === "all" || tags.indexOf(f) !== -1);
+      });
+    });
+  });
+
+  /* highlight the current section in the nav */
+  var links = document.querySelectorAll("#nav a");
+  var map = {};
+  links.forEach(function (a) { map[a.getAttribute("href").slice(1)] = a; });
+  if ("IntersectionObserver" in window) {
+    var io = new IntersectionObserver(function (entries) {
+      entries.forEach(function (en) {
+        if (en.isIntersecting && map[en.target.id]) {
+          links.forEach(function (l) { l.removeAttribute("aria-current"); });
+          map[en.target.id].setAttribute("aria-current", "true");
+          map[en.target.id].scrollIntoView({ block: "nearest", inline: "center" });
+        }
+      });
+    }, { rootMargin: "-30% 0px -60% 0px" });
+    Object.keys(map).forEach(function (id) {
+      var s = document.getElementById(id);
+      if (s) io.observe(s);
+    });
+  }
+
+  /* back to top */
+  var up = document.getElementById("up");
+  window.addEventListener("scroll", function () {
+    up.classList.toggle("show", window.scrollY > 600);
+  }, { passive: true });
+  up.addEventListener("click", function () { window.scrollTo({ top: 0 }); });
+
+  /* contact form: send via Formspree, or open the email app if it is not set up yet */
+  var form = document.getElementById("contact-form");
+  var note = document.getElementById("form-note");
+  form.addEventListener("submit", function (e) {
+    e.preventDefault();
+    var data = new FormData(form);
+    var notSetUp = form.action.indexOf("YOUR_FORM_ID") !== -1;
+    if (notSetUp) {
+      var body = encodeURIComponent(data.get("message") + "\n\n" + data.get("name") + "\n" + data.get("email"));
+      window.location.href = "mailto:you@example.com?subject=" + encodeURIComponent("Portfolio message from " + data.get("name")) + "&body=" + body;
+      note.textContent = "Opening your email app. If nothing opens, email me directly.";
+      return;
+    }
+    note.textContent = "Sending...";
+    fetch(form.action, { method: "POST", body: data, headers: { Accept: "application/json" } })
+      .then(function (r) {
+        if (r.ok) { form.reset(); note.textContent = "Thanks, your message was sent."; }
+        else { note.textContent = "Could not send. Please email me directly."; }
+      })
+      .catch(function () { note.textContent = "Could not send. Please email me directly."; });
+  });
+
+  document.getElementById("yr").textContent = new Date().getFullYear();
+})();
+</script>
+</body>
+</html>
